@@ -21,15 +21,13 @@
   <thead> 
 <tr>
 <td>Name</td>
-<td>Image</td>
 <td>Website</td>
 <td>Status</td>
 </tr>
   </thead>
 <tbody>
 <tr>
-<td align="center"><h1>Akshay Patel</h1></td>
-<td align="center"><img src="https://drive.google.com/uc?id=1Nsfyrc6tkpFdakfvzTwU5h4SW0v8zr4-" width="150" height="150" alt=""></td>
+<td align="center">Akshay Patel</td>
 <td align="center">https://akshaypatel67.github.io/</td>
 <td align="center">Approved</td>
 </tr>
@@ -47,9 +45,9 @@ $(document).ready(function() {
       $(this).find('td').each(function(){
         var  t = $(this).text().replace(/\s+|\t/g,"")
       if( t.includes('https://')){
-          $(this).html("<a href='"+t+"' class='btn btn-primary' target='_blank'>Search Now</a>")
-        }else if(t.includes('http://tinkerfest.in/') ){
-          $(this).html("<a href='"+t+"' class='btn btn-success' target='_blank'>Learn More</a>")
+          $(this).html("<a href='"+t+"' class='btn btn-primary' target='_blank'>Open</a>")
+        }else if(t.includes('Appproved') ){
+          $(this).html("<a href='"+t+"' class='btn btn-success' target='_blank'>Approved</a>")
         }
       })
     })
